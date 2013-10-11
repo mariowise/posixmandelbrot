@@ -32,7 +32,8 @@ void getpar(int argc, char * argv[]) {
 				par.check[4] = 1;
 				break;
 			case 's':
-				par.s = atof(optarg);
+				par.s = (double) atof(optarg);
+				// sscanf(optarg, "%lf", (double *) &(par.s));
 				par.check[5] = 1;
 				break;
 			case 'f':

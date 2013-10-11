@@ -6,7 +6,14 @@
 #include <getpar.h>
 #include <edacor.h>
 
+#include <stdbool.h>
+
 int main(int argc, char * argv[]) {
+	// Lectura de parámetros
 	getpar(argc, argv);
-	printpar();
+
+	// Construcción de la matriz de puntos
+	buildmatrix();
+
+	return EXIT_SUCCESS;
 }

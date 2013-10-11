@@ -12,10 +12,13 @@ struct _par {
 	int d;	// Límite superior del componente imaginario del plano
 
 	// Muestreo
-	float s;	// Step o longitud del paso
+	double s;	// Step o longitud del paso
 
 	// nombre del archivo de salida
-	char * f;	
+	char * f;
+
+	// Número de hebras o workers
+	int t;
 
 	// Arreglo de booleanos para saber si se ingresaron todos los parámetros
 	int check[7];
