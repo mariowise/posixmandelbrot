@@ -5,16 +5,24 @@
 
 int dimx, dimy;
 
-float ** matrix;
+double * matrix;
+
+int shm_matrix;
+
+int shm_fd;
 
 void buildmatrix();
 
-int * ctom(float x, float y);
+int * ctom(double x, double y);
 
-int * ctom(float x, float y);
+double * mtoc(int corx, int cory);
 
 int mtoi(int corx, int cory);
 
 int * itom(int jobno);
+
+void writeoutput();
+
+void edacortest();
 
 #endif

@@ -6,10 +6,10 @@ struct _par {
 	int p;	// Depth o profundidad de búsqueda
 
 	// Parámetros de dimensión del plano a trabajar
-	int a;	// Límite inferior del componente real del plano
-	int b;	// Límite inferior del componente imaginario del plano
-	int c;	// Límite superior del componetne real del plano
-	int d;	// Límite superior del componente imaginario del plano
+	double a;	// Límite inferior del componente real del plano
+	double b;	// Límite inferior del componente imaginario del plano
+	double c;	// Límite superior del componetne real del plano
+	double d;	// Límite superior del componente imaginario del plano
 
 	// Muestreo
 	double s;	// Step o longitud del paso
@@ -21,7 +21,7 @@ struct _par {
 	int t;
 
 	// Arreglo de booleanos para saber si se ingresaron todos los parámetros
-	int check[7];
+	int check[8];
 
 } par;
 
