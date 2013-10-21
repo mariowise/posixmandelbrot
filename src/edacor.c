@@ -27,7 +27,7 @@ void buildmatrix() {
 	dimx = _div(par.c - par.a, par.s) +1;
 	dimy = _div(par.d - par.b, par.s) +1;
 
-					printf("Construyendo matriz de puntos [%d, %d] ... ", dimx, dimy);
+					// printf("Construyendo matriz de puntos [%d, %d] ... ", dimx, dimy);
 	
 	// Creacion de la memoria compartida
 	shm_fd = shm_open("/matrix", O_CREAT | O_RDWR, S_IRUSR | S_IWUSR);
@@ -49,7 +49,7 @@ void buildmatrix() {
 		exit(1);
 	}
 
-					printf("OK\n");
+					// printf("OK\n");
 }
 
 // Complex to matrix (Número complejo a posición de la matriz)
